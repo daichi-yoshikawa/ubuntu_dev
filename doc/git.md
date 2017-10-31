@@ -21,3 +21,14 @@ $ git push origin master
 
 The third step is required only when you've already modified anything
 in the submodule.
+
+
+** non-fast-forward/head detouched from
+$ git pull origin master
+$ git push origin master
+
+If you still have problem ...
+$ git branch tmp1
+$ git checkout master
+$ git merge tmp1
+$ git branch -d tmp1
