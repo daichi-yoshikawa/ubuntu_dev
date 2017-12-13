@@ -32,3 +32,27 @@ $ git branch tmp1
 $ git checkout master
 $ git merge tmp1
 $ git branch -d tmp1
+
+
+** When you can't see branch
+You might see the target branch by this.
+```bash
+    $ git branch -a
+```
+
+If you could see, try the follow.
+```bash
+    $ git remote update
+    $ git fetch
+    $ git checkout --track origin/<branch-name>
+```
+
+If you couldn't see, try the follows.
+```bash
+    $ git fetch
+    $ git checkout <branch-name>
+```
+```bash
+    $ git fetch origin
+    $ git checkout <branch-name>
+```
