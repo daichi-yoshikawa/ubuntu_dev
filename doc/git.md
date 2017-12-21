@@ -56,3 +56,20 @@ If you couldn't see, try the follows.
     $ git fetch origin
     $ git checkout <branch-name>
 ```
+
+** Merge branch to master
+
+If you have some updates, discard them or add, commit and push.
+And then,
+
+```bash
+    $ git checkout master
+    $ git merge <branch-name>
+```
+
+If you had conflict ...,
+
+The easiest way is pick one of them and discard another.
+```bash
+    $ git checkout <commit-id> <name-of-conflicted-file>
+```
