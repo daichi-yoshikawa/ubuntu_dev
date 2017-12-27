@@ -15,5 +15,5 @@ In this case, do the following steps.
 ```bash
     $ sudo rm /var/lib/mongodb/mongod.lock
     $ sudo mongod --repair
-    $ sudo systemctl start mongodb.service
+    $ sudo systemctl start mongod.service
 ```
