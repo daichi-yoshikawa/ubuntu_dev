@@ -8,3 +8,7 @@ How to install wi-fi driver.
    $ cp /pool/restricted/b/bcmwl/*.deb ~/
 5. Execute dpkg and install drivers.
    $ sudo dpkg -i ~/*.deb
+
+Sometimes the driver get not to work well
+because of kernel updates.
+https://unix.stackexchange.com/questions/175810/how-to-install-broadcom-bcm4360-on-debian-on-macbook-pro
