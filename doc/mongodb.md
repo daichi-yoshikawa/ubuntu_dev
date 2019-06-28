@@ -17,3 +17,14 @@ In this case, do the following steps.
     $ sudo mongod --repair
     $ sudo systemctl start mongod.service
 ```
+
+**Get started
+```bash
+    mongo --shell
+```
+
+show dbs <- Show available dbs
+use <db> <- Switch db to use
+show tables <- Show available tables
+db.<table>.drop() <- Drop table
+db.<table>.find({}) <- select * from <table>;

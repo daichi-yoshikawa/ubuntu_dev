@@ -64,7 +64,9 @@ And then,
 
 ```bash
     $ git checkout master
+    $ git pull origin master
     $ git merge <branch-name>
+    $ git push origin master
 ```
 
 If you had conflict ...,
@@ -72,4 +74,14 @@ If you had conflict ...,
 The easiest way is pick one of them and discard another.
 ```bash
     $ git checkout <commit-id> <name-of-conflicted-file>
+```
+
+# Cancel one before commit
+```bash
+    $ git reset --soft HEAD^
+```
+
+# Back to one before commit
+```bash
+    $ git reset --hard HEAD
 ```
